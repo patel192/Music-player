@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="music-player">
+        <h1>Music Player</h1>
+        <audio class="audiobox" id="audioPlayer" controls></audio>
+        <div class="controls">
+            <button id="prevButton">Previous</button>
+            <button id="playPauseButton">Play</button>
+            <button id="nextButton">Next</button>
+            <input type="range" id="seekSlider" min="0" max="100" value="0">
+            <span id="currentTime">0:00</span> / <span id="totalTime">0:00</span>
+        </div>
+        <div class="song-list">
+            <ul id="songList"></ul>
+        </div>
+        <input type="file" id="addSong" multiple>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
